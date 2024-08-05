@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Reset and base styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.6;
+        background-color: #f0f3f5; /* Light gray */
+        color: #333; /* Dark gray */
+        margin: 0;
+      }
+
+      .container {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #bbe9ff; /* Light blue */
+        /* padding: 20px; */
+      }
+
+      .header {
+        width: 100%;
+        height: 90px;
+        background-color: #ffffff; /* White */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        padding: 20px;
+        display: flex;
+      }
+
+      .company-logo {
+        height: 100%;
+      }
+
+      .content-container {
+        margin-top: 1rem;
+        width: 100%;
+        max-width: 800px;
+        background-color: #ffffff; /* White */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px; /* Rounded corners */
+
+        img {
+          /* max-width: 100%; */
+          height: 300px;
+          display: block;
+          margin: 1rem auto;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      .lesson-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #333; /* Dark gray */
+        margin-bottom: 1rem;
+        text-align: center;
+        text-decoration: underline; /* Underline style */
+      }
+
+      .probing-question {
+        margin-top: 1.5rem;
+        background-color: #f0f8ff; /* Light blue */
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      .probing-question div {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #444; /* Dark gray */
+        margin-bottom: 5px;
+      }
+
+      .probing-question p {
+        color: #666; /* Medium gray */
+      }
+
+      h2,
+      h3,
+      h4 {
+        color: #333; /* Dark gray */
+        margin-top: 1.5rem;
+        font-weight: bold; /* Bold font for all headings */
+      }
+
+      .learn-about {
+        background-color: palegreen;
+        border-radius: 1rem;
+        text-align: left;
+        margin: 1rem;
+        padding: 1rem 0;
+        li {
+          list-style-position: inside;
+          padding-left: 1rem;
+        }
+      }
+
+      p,
+      li {
+        color: #555; /* Medium gray */
+      }
+
+      ol,
+      ul {
+        margin-bottom: 1.5rem;
+        padding-left: 20px;
+      }
+
+      hr {
+        border: none; /* Remove default border */
+        height: 2px; /* Set the height of the horizontal rule */
+        background-color: palevioletred; /* Color of the rule */
+      }
+      @media (max-width: 768px) {
+        .company-logo {
+          height: 75%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="./assests/logo/logo1.png" alt="logo" class="company-logo" />
+        <img src="./assests/logo/logo2.png" alt="logo" class="company-logo" />
+      </div>
+
+      <div class="content-container">
+        <div class="lesson-title">Decimals</div>
+
+        <div class="lesson-content">
+          <h2>Today we are going to learn about:</h2>
+          <ul class="learn-about">
+            <li>Multiplying decimals with exponents where base is 10</li>
+            <li>Rounding decimals</li>
+            <li>Converting percentage to decimals</li>
+            <li>Multiplying two decimal numbers</li>
+          </ul>
+
+          <div class="probing-question">
+            <div>Probing Question:</div>
+            <p>
+              How do you determine where to place the decimal point in the
+              product when multiplying two decimal numbers?
+            </p>
+          </div>
+          <hr />
+
+          <div>
+            <h4>Multiplying Decimals</h4>
+            <p>
+              Multiplying decimals with whole numbers is similar to the
+              multiplication of whole numbers, but with attention to the decimal
+              point placement.
+            </p>
+            <ol>
+              <li>
+                Initially, ignore the decimal point and multiply the two numbers
+                normally.
+              </li>
+              <li>
+                After multiplication, count the number of decimal places in the
+                decimal number. The product obtained after multiplication will
+                have the same number of decimal places.
+              </li>
+              <li>
+                Place the decimal point in the obtained product following Step
+                2.
+              </li>
+            </ol>
+            <p>For example: 15 x 6.5 = 97.5</p>
+            <img src="./assests/images/img1.png" alt="example image" />
+          </div>
+          <hr />
+
+          <div>
+            <h4>Multiplying Decimals by Powers of 10:</h4>
+            <p>
+              While multiplying any decimal by 10, 100, 1000, or any other power
+              of 10, we just simply shift the decimal point towards the right as
+              many places as the number of zeros in the power of 10.
+            </p>
+            <ul>
+              <li>
+                If we multiply a decimal by 10, we shift the decimal point one
+                place towards the right, as there is 1 zero in the number 10.
+              </li>
+              <li>
+                If we multiply any decimal by 100, we shift the decimal point
+                two places towards the right.
+              </li>
+              <li>
+                Similarly, if we multiply a decimal by 1000, we shift the
+                decimal point by three places towards the right, and so on.
+              </li>
+            </ul>
+            for example,
+            <ul>
+              <li>2.32 × 10 = 23.2</li>
+              <li>2.32 × 100 = 232</li>
+              <li>2.32 × 1000 = 2320</li>
+            </ul>
+          </div>
+          <hr />
+
+          <div>
+            <h4>Multiplying Two Decimal Numbers</h4>
+            <p>
+              It is the same as that of the whole number, but the only
+              difference is that in this we have to take the sum of the total
+              number of decimal places in both the given numbers and that needs
+              to be equal to the number of decimal places in the product. To
+              multiply two decimals, follow the steps listed below:
+            </p>
+            <ol>
+              <li>
+                Initially, ignore the decimal point and multiply the two numbers
+                normally.
+              </li>
+              <li>
+                After multiplication, count the total number of decimal places
+                in both the numbers. The product obtained after multiplication
+                will have this total number of decimal places.
+              </li>
+              <li>
+                Place the decimal point in the obtained product following Step
+                2.
+              </li>
+            </ol>
+            <p>For example: 7.25 x 1.2 = 8.7</p>
+            <img src="./assests/images/img2.png" alt="example image" />
+          </div>
+          <hr />
+
+          <div>
+            <h4>Rounding Numbers</h4>
+            <p>
+              Rounding numbers means adjusting the digits of a number in such a
+              way that it gives an approximate value. This value is an easier
+              representation of the given number.
+            </p>
+          </div>
+          <hr />
+          <div>
+            <h4>Rounding Rules for Decimal Numbers</h4>
+            <p>Rounding rules for decimal numbers are as follows:</p>
+            <ul>
+              <li>
+                Determine the rounding digit and look at its right-hand side.
+              </li>
+              <li>
+                If the digits on the right-hand side are less than 5, consider
+                them as equal to zero.
+              </li>
+              <li>
+                If the digits on the right-hand side are greater than or equal
+                to 5, then add +1 to that digit and consider all other digits as
+                zero.
+              </li>
+            </ul>
+          </div>
+          <hr />
+
+          <div>
+            <h4>Percentage to Decimal</h4>
+            <p>
+              Percent to decimal conversion is done by shifting the decimal
+              point to two places towards the left and removing the percent sign
+              (%). For example, if 1% is given, its decimal conversion is 0.01.
+            </p>
+          </div>
+<hr/>
+          <div>
+            <h4>Converting Percentage to Decimal</h4>
+            <p>
+              Percent is a ratio or a fraction in which the whole is always
+              taken as 100. So, 3% means 3 parts out of 100, and 10% means 10
+              parts out of 100. While a decimal is a form of writing numbers in
+              precise form using a decimal point. For example, 3.5 means 3 full
+              parts and one half (0.5) part. 
+            </p>
+           <p> To convert a percentage to decimal,
+            follow the steps given below:</p>
+
+            <ol>
+              <li>Remove the percentage sign (%)</li>
+              <li>
+                Put a decimal point by taking two jumps from the right side
+                towards the left.
+              </li>
+            </ol>
+            <p>
+              For example, let us convert 30% to a decimal. 30% can be written
+              as 30 without the percent sign. Now, it is a whole number so
+              consider the decimal point at the right end. 30 is the same as
+              30.0. Now, by shifting the decimal point two places towards the
+              left, we get 0.3. Therefore, 30%=0.3.
+            </p>
+          </div>
+          <hr />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
